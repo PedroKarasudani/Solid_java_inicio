@@ -4,10 +4,10 @@ import java.math.BigDecimal;
 
 public class Tercerizado{
 
-    private DadosFuncionario dadosFuncionario;
+    public DadosFuncionario dadosFuncionario;
     private String empresa;
 
-    public Tercerizado(String nome, String cpf, Cargo cargo, BigDecimal salario) {
+    public Tercerizado(String nome, String cpf, Cargo cargo, BigDecimal salario, String empresa) {
         this.dadosFuncionario = new DadosFuncionario (nome, cpf, cargo, salario);
         this.empresa = empresa;
     }
