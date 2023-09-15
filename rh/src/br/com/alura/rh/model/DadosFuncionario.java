@@ -9,6 +9,15 @@ public class DadosFuncionario {
 	private Cargo cargo;
 	private BigDecimal salario;
     
+    
+
+    public DadosFuncionario(String nome, String cpf, Cargo cargo, BigDecimal salario) {
+        this.nome = nome;
+        this.cpf = cpf;
+        this.cargo = cargo;
+        this.salario = salario;
+    }
+    
     public String getNome() {
         return nome;
     }

@@ -5,14 +5,11 @@ import java.time.LocalDate;
 
 public class Funcionario {
 
-	private DadosFuncionario dadosFuncionario;
+	public DadosFuncionario dadosFuncionario;
 	private LocalDate dataUltimoReajuste;
 
 	public Funcionario(String nome, String cpf, Cargo cargo, BigDecimal salario) {
-		this.dadosFuncionario.setNome(nome);
-		this.dadosFuncionario.setCpf(cpf);
-		this.dadosFuncionario.setCargo(cargo);
-		this.dadosFuncionario.setSalario(salario);
+		this.dadosFuncionario = new DadosFuncionario(nome, cpf, cargo, salario);
 	}
 
 	public void atualizarSalario(BigDecimal novoSalario) {
